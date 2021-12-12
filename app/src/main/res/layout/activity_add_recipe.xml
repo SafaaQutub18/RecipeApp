@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddRecipeActivity"
+    android:background = "@drawable/fodd_backg1"
+    >
+
+    <LinearLayout
+        android:layout_width="333dp"
+        android:layout_height="353dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/white_trans"
+        >
+
+
+        <EditText
+            android:id="@+id/titleET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity=""
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:hint="Title"/>
+
+        <EditText
+            android:id="@+id/authorET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:hint="Author"/>
+
+        <EditText
+            android:id="@+id/ingredientsET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:hint="ingredients"/>
+        <EditText
+            android:id="@+id/instructionsET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:hint="instructions"/>
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="ADD RECIPE"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/lightRed"
+            />
+
+        <Button
+            android:id="@+id/viewBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="VIEW RECIPES"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="@color/lightRed"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
